@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Online Baby Vaccination System</title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.jpg">
+	
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Progressus HTML5 template"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li><a href="home.html">Home</a></li>
+					<li><a href="about1.html">About</a></li>
+					<li><a href="vaccination.html">Vaccination Information </a></li>
+					<li><a href="contact1.html">Contact</a></li>
+					<li><a class="btn" href="index.html">SIGN OUT</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="active"><a href="profile.html" class="nav-item nav-link">Profile</a></li>
+                        <li><a href="form.html" class="nav-item nav-link active">Child Information</a></li>
+                           
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+
+	</div> 
+	<!-- /.navbar -->
+
+	<header id="head" class="secondary"></header><br><br>
+
+	<!-- container -->
+	<div class="container">
+
+		<div class="row">
+			
+			<!-- Article main content -->
+			<article class="col-sm-9 maincontent">
+				<header class="page-header">
+                    <h4>children vaccination information</h4>
+
+				</header>
+				
+				<table class="child-info-table">
+					<tbody class="child-info-table-body">
+						<tr class="child-info-table-row">
+							<td><strong>ডোজ অনুযায়ী শিশুকে টিকাকেন্দ্রে আনতে হবে</strong></td>
+							<td> <strong>টিকা পাওয়ার তারিখ</strong></td>
+						</tr>
+						<tr class="child-info-table-row">
+							<td> <strong>১। ১ম বার:</strong> বিসিজি, পেন্টা-১, ওপিভি-১, পিসিভি-১, এবং আইপিভি-১ টিকা পাওয়ার তারিখ ("টিকা ক্যালেন্ডার" থেকে)</td>
+							<td><input id="1st"></td>
+						</tr>
+						<tr class="child-info-table-row">
+							<td><strong> ২। ২য় বার:</strong> পেন্টা-২, ওপিভি-২ এবং পিসিভি-২ টিকা পাওয়ার তারিখ ("সেশন প্ল্যান" থেকে)</td>
+							<td><input id="2nd"></td>
+						</tr>
+						<tr class="child-info-table-row">
+					       <td> <strong>৩। ৩য় বার:</strong> পেন্টা-৩, ওপিভি-৩,  পিসিভি-৩ এবং আইপিভি-২ টিকা পাওয়ার তারিখ ("সেশন প্ল্যান" থেকে)</td>
+							<td><input id="3rd"></td>
+						</tr>
+						<tr class="child-info-table-row">
+							<td> <strong>৪। ৪র্থ বার:</strong> এমআর ১ম ডোজ টিকা পাওয়ার তারিখ ("টিকা ক্যালেন্ডার" থেকে)</td>
+							<td><input id="4th"></td>
+						<tr class="child-info-table-row">
+							<td> <strong>৫। ৫ম বার:</strong> এমআর ২য় ডোজ টিকা পাওয়ার তারিখ ("টিকা ক্যালেন্ডার" থেকে)</td>
+							<td><input id="5th"></td>
+						</tr>
+					</tbody>
+			     </table>
+
+			   <br><br>
+				<table class="child-info-table">
+					<thead class="child-info-table-header">
+						<tr>
+							<th rowspan="2" style="text-align: center;">টিকার নাম</th>
+							<th colspan="5" style="text-align: center; height: 40px;">টিকা প্রদানের তারিখ</th>
+					    </tr>
+						<tr>
+							<td>১ম বার</td>
+							<td>২য় বার</td>
+							<td>৩য় বার</td>
+							<td>৪র্থ বার</td>
+							<td>৫ম বার</td>
+						</tr>
+					</thead>
+					<tbody class="child-info-table-body">
+						<tr class="child-info-table-row">
+							<td>বিসিজি</td>
+							<td><input id="bcg"></td>
+							<td style="background-color: rgb(181, 166, 146);"></td>
+							<td></td>
+							<td style="background-color: rgb(181, 166, 146);"></td>
+							<td style="background-color: rgb(181, 166, 146);"></td>
+						</tr>
+						<tr class="child-info-table-row">
+							<td> পেন্টা(ডিপিটি,<br> হেপ-বি, হিব)</td>
+							<td><input id="p1"></td>
+							<td><input id="p2"></td>
+							<td><input id="p3"></td>
+							<td style="background-color: rgb(181, 166, 146);"></td>
+							<td style="background-color: rgb(181, 166, 146);"></td>
+						</tr>
+						<tr class="child-info-table-row">
+					       <td>পিসিভি</td>
+							<td><input id="pcv1"></td>
+							<td><input id="pcv2"></td>
+							<td><input id="pcv3"> </td>
+							<td style="background-color: rgb(181, 166, 146);"></td>
+							<td style="background-color: rgb(181, 166, 146);"></td>
+						</tr>
+						<tr class="child-info-table-row">
+							<td>ওপিভি</td>
+							<td><input id="opv1"></td>
+							<td><input id="opv2"></td>
+							<td><input id="opv3"></td>
+							<td style="background-color: rgb(181, 166, 146);"></td>
+							<td style="background-color: rgb(181, 166, 146);"></td>
+						</tr>
+						<tr class="child-info-table-row">
+							<td>আইপিভি</td>
+							<td><input id="ipv1"></td>
+							<td style="background-color: rgb(181, 166, 146);"></td>
+							<td>,<input type="" name="" id="ipv2"></td>
+							<td style="background-color: rgb(181, 166, 146);"></td>
+							<td style="background-color: rgb(181, 166, 146);"></td>
+						</tr>
+						<tr class="child-info-table-row">
+							<td>এমআর <br>(হাম ও রুবেলা)</td>
+							<td style="background-color: rgb(181, 166, 146);"></td>
+							<td style="background-color: rgb(181, 166, 146);"></td>
+							<td style="background-color: rgb(181, 166, 146);"></td>
+							<td><input id="mr1"></td>
+							<td><input id="mr2"></td>
+						</tr>
+					</tbody>
+				  </table>
+
+				  <button style="background-color:orange ;">Add</button>
+					
+			</article>
+			<!-- /Article -->
+		</div>
+	</div>	<!-- /container -->
+	<br><br><br>
+	
+	<footer id="footer">
+
+		<div class="footer1">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Contact</h3>
+						<div class="widget-body">
+							<p>01727869414<br>
+								<a href="mailto:#">fatema35-2290@diu.edu.bd</a><br>
+								<br>
+								Mohammadpur, Dhaka.
+							</p>	
+						</div>
+					</div>
+
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Follow me</h3>
+						<div class="widget-body">
+							<p class="follow-me-icons clearfix">
+								<a href=""><i class="fa fa-twitter fa-2"></i></a>
+								<a href=""><i class="fa fa-github fa-2"></i></a>
+								<a href="https://www.facebook.com/mim.akther.5439087"><i class="fa fa-facebook fa-2"></i></a>
+							</p>	
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="simplenav">
+								<a href="#">Home</a> | 
+								<a href="about.html">About</a> |
+								<a href="sidebar-right.html">Vaccination Information</a> |
+								<a href="contact.html">Contact</a> |
+								<b><a href="signup.html">Sign up</a></b>
+							</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-6 widget">
+						
+					</div>
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="text-right">
+								Copyright &copy; 2014.
+							</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+	</footer>	
+		
+
+
+
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="assets/js/headroom.min.js"></script>
+	<script src="assets/js/jQuery.headroom.min.js"></script>
+	<script src="assets/js/template.js"></script>
+	
+	<!-- Google Maps -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=&amp;sensor=false&amp;extension=.js"></script> 
+	<script src="assets/js/google-map.js"></script>
+	
+
+</body>
+</html>
